@@ -1,30 +1,8 @@
-# Gatsby Starter Ghost
-
-A starter template to build lightning fast websites with [Ghost](https://ghost.org) & [Gatsby](https://gatsbyjs.org)
-
-**Demo:** https://gatsby.ghost.org
-
-&nbsp;
-
-![gatsby-starter-ghost](https://user-images.githubusercontent.com/120485/50913567-8ab8e380-142c-11e9-9e78-de02ded12fc6.jpg)
-
-&nbsp;
-
+# NatBurgwyn.com
 
 # Installing
 
-```bash
-# With Gatsby CLI
-gatsby new gatsby-starter-ghost https://github.com/TryGhost/gatsby-starter-ghost.git
-```
-
-```bash
-# From Source
-git clone https://github.com/TryGhost/gatsby-starter-ghost.git
-cd gatsby-starter-ghost
-```
-
-Then install dependencies
+Install dependencies
 
 ```bash
 yarn
@@ -86,9 +64,3 @@ gatsby serve
 ```
 
 Gatsby `develop` uses the `development` config in `.ghost.json` - while Gatsby `build` uses the `production` config.
-
-&nbsp;
-
-# Copyright & License
-
-Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
