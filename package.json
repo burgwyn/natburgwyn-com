@@ -36,9 +36,9 @@
     "babel-preset-gatsby": "^0.9.1",
     "eslint": "7.16.0",
     "eslint-plugin-ghost": "1.5.0",
-    "eslint-plugin-react": "7.21.5s",
+    "eslint-plugin-react": "7.21.5",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^26.6.3s",
+    "jest": "^26.6.3",
     "react-test-renderer": "^17.0.1"
   },
   "dependencies": {
