@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "http://blog.natburgwyn.com",
+    "apiUrl": "http://blog.api.natburgwyn.com",
     "contentApiKey": "bcc7c14b39afebeda34c12bc69"
   },
   "production": {
-    "apiUrl": "http://blog.natburgwyn.com",
+    "apiUrl": "http://blog.api.natburgwyn.com",
     "contentApiKey": "bcc7c14b39afebeda34c12bc69"
   }
 }
