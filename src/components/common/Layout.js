@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
-import { Link, StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { Link, StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import { Navigation } from '.'
-import config from '../../utils/siteConfig'
+import { Navigation } from ".";
+import config from "../../utils/siteConfig";
 
 // Styles
-import '../../styles/app.css'
+import "../../styles/app.css";
 
 /**
 * Main layout component
@@ -19,9 +19,9 @@ import '../../styles/app.css'
 *
 */
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
-    const site = data.allGhostSettings.edges[0].node
-    const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
-    const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
+    const site = data.allGhostSettings.edges[0].node;
+    const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, "")}` : null;
+    const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, "")}` : null;
 
     return (
         <>
@@ -94,8 +94,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </div>
 
         </>
-    )
-}
+    );
+};
 
 DefaultLayout.propTypes = {
     children: PropTypes.node.isRequired,
@@ -105,7 +105,7 @@ DefaultLayout.propTypes = {
         file: PropTypes.object,
         allGhostSettings: PropTypes.object.isRequired,
     }).isRequired,
-}
+};
 
 const DefaultLayoutSettingsQuery = props => (
     <StaticQuery
@@ -129,6 +129,6 @@ const DefaultLayoutSettingsQuery = props => (
         `}
         render={data => <DefaultLayout data={data} {...props} />}
     />
-)
+);
 
-export default DefaultLayoutSettingsQuery
+export default DefaultLayoutSettingsQuery;
