@@ -15,7 +15,7 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
         if (favicon) {
             headComponents.push(
                 <link
-                    key={`gatsby-plugin-manifest-icon-link`}
+                    key={"gatsby-plugin-manifest-icon-link"}
                     rel="shortcut icon"
                     href={withPrefix(favicon)}
                 />
@@ -26,15 +26,15 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
     // Add manifest link tag.
     headComponents.push(
         <link
-            key={`gatsby-plugin-manifest-link`}
+            key={"gatsby-plugin-manifest-link"}
             rel="manifest"
-            href={withPrefix(`/manifest.webmanifest`)}
+            href={withPrefix("/manifest.webmanifest")}
         />
     )
     // The user has an option to opt out of the theme_color meta tag being inserted into the head.
     if (pluginOptions.theme_color) {
         let insertMetaTag = Object.keys(pluginOptions).includes(
-            `theme_color_in_head`
+            "theme_color_in_head"
         )
             ? pluginOptions.theme_color_in_head
             : true
@@ -42,7 +42,7 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
         if (insertMetaTag) {
             headComponents.push(
                 <meta
-                    key={`gatsby-plugin-manifest-meta`}
+                    key={"gatsby-plugin-manifest-meta"}
                     name="theme-color"
                     content={pluginOptions.theme_color}
                 />

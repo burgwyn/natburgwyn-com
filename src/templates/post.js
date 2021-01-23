@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
+import React from "react"
+import PropTypes from "prop-types"
+import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
-import { Layout } from '../components/common'
-import { MetaData } from '../components/common/meta'
+import { Layout } from "../components/common"
+import { MetaData } from "../components/common/meta"
 
 /**
 * Single post view (/:slug)

@@ -21,7 +21,7 @@ module.exports = {
         },
         propWrapperFunctions: ["forbidExtraProps"],
         jest: {
-            "version": 26
+            version: 26,
         },
     },
     rules: {
@@ -59,6 +59,6 @@ module.exports = {
         ],
     },
     env: {
-        "jest/globals": true
+        "jest/globals": true,
     },
 }

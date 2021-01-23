@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react"
 
-const Tag = ({tag}) => (
+const Tag = ({ tag }) => (
     <span>{tag}</span>
-);
+)
 
-export default Tag;
+export default Tag

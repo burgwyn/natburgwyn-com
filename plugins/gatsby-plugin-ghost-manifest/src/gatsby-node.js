@@ -1,15 +1,15 @@
-const fs = require(`fs`)
-const path = require(`path`)
-const Promise = require(`bluebird`)
-const sharp = require(`sharp`)
-const { defaultIcons, doesIconExist } = require(`./common.js`)
+const fs = require("fs")
+const path = require("path")
+const Promise = require("bluebird")
+const sharp = require("sharp")
+const { defaultIcons, doesIconExist } = require("./common.js")
 
 sharp.simd(true)
 
 function generateIcons(icons, srcIcon) {
     return Promise.map(icons, (icon) => {
-        const size = parseInt(icon.sizes.substring(0, icon.sizes.lastIndexOf(`x`)))
-        const imgPath = path.join(`public`, icon.src)
+        const size = parseInt(icon.sizes.substring(0, icon.sizes.lastIndexOf("x")))
+        const imgPath = path.join("public", icon.src)
 
         return sharp(srcIcon)
             .resize(size)
@@ -22,7 +22,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
     let { icon, ...manifest } = pluginOptions
 
     const { data } = await graphql(pluginOptions.query)
-    const siteTitle = data.allGhostSettings.edges[0].node.title || `No Title`
+    const siteTitle = data.allGhostSettings.edges[0].node.title || "No Title"
     manifest = {
         ...manifest,
         name: siteTitle,
@@ -40,7 +40,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
     }
 
     // Determine destination path for icons.
-    const iconPath = path.join(`public`, path.dirname(manifest.icons[0].src))
+    const iconPath = path.join("public", path.dirname(manifest.icons[0].src))
 
     //create destination directory if it doesn't exist
     if (!fs.existsSync(iconPath)) {
@@ -48,7 +48,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
     }
 
     fs.writeFileSync(
-        path.join(`public`, `manifest.webmanifest`),
+        path.join("public", "manifest.webmanifest"),
         JSON.stringify(manifest)
     )
 
@@ -62,7 +62,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
         }
         generateIcons(manifest.icons, icon).then(() => {
             //images have been generated
-            console.log(`done generating icons for manifest`)
+            console.log("done generating icons for manifest")
             Promise.resolve()
         })
     } else {

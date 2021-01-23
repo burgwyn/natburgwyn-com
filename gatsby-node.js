@@ -1,6 +1,6 @@
-const path = require(`path`)
-const { postsPerPage } = require(`./src/utils/siteConfig`)
-const { paginate } = require(`gatsby-awesome-pagination`)
+const path = require("path")
+const { postsPerPage } = require("./src/utils/siteConfig")
+const { paginate } = require("gatsby-awesome-pagination")
 
 /**
  * Here is the place where Gatsby creates the URLs for all the
@@ -59,11 +59,11 @@ exports.createPages = async ({ graphql, actions }) => {
     const posts = result.data.allGhostPost.edges
 
     // Load templates
-    const indexTemplate = path.resolve(`./src/templates/index.js`)
-    const tagsTemplate = path.resolve(`./src/templates/tag.js`)
-    const authorTemplate = path.resolve(`./src/templates/author.js`)
-    const pageTemplate = path.resolve(`./src/templates/page.js`)
-    const postTemplate = path.resolve(`./src/templates/post.js`)
+    const indexTemplate = path.resolve("./src/templates/index.js")
+    const tagsTemplate = path.resolve("./src/templates/tag.js")
+    const authorTemplate = path.resolve("./src/templates/author.js")
+    const pageTemplate = path.resolve("./src/templates/page.js")
+    const postTemplate = path.resolve("./src/templates/post.js")
 
     // Create tag pages
     tags.forEach(({ node }) => {
@@ -193,9 +193,9 @@ exports.createPages = async ({ graphql, actions }) => {
         component: indexTemplate,
         pathPrefix: ({ pageNumber }) => {
             if (pageNumber === 0) {
-                return `/`
+                return "/"
             } else {
-                return `/page`
+                return "/page"
             }
         },
     })
