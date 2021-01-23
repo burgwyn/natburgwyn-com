@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
 
 const Pagination = ({ pageContext }) => {
-    const { previousPagePath, nextPagePath, humanPageNumber, numberOfPages } = pageContext
+    const { previousPagePath, nextPagePath, humanPageNumber, numberOfPages } = pageContext;
 
     return (
         <nav className="pagination" role="navigation">
@@ -26,11 +26,11 @@ const Pagination = ({ pageContext }) => {
                 )}
             </div>
         </nav>
-    )
-}
+    );
+};
 
 Pagination.propTypes = {
     pageContext: PropTypes.object.isRequired,
-}
+};
 
-export default Pagination
+export default Pagination;
