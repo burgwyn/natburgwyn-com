@@ -39,7 +39,7 @@ module.exports = {
             { requireReturnForObjectLiteral: true },
         ],
         "jsx-quotes": ["error", "prefer-double"],
-        semi: ["error", "never"],
+        semi: ["error", "always"],
         "object-curly-spacing": ["error", "always"],
         "comma-dangle": [
             "error",
@@ -61,4 +61,4 @@ module.exports = {
     env: {
         "jest/globals": true,
     },
-}
+};

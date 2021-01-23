@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
 
-import { Layout, PostCard, Pagination } from "../components/common"
-import { MetaData } from "../components/common/meta"
+import { Layout, PostCard, Pagination } from "../components/common";
+import { MetaData } from "../components/common/meta";
 
 /**
 * Author page (/author/:slug)
@@ -12,10 +12,10 @@ import { MetaData } from "../components/common/meta"
 *
 */
 const Author = ({ data, location, pageContext }) => {
-    const author = data.ghostAuthor
-    const posts = data.allGhostPost.edges
-    const twitterUrl = author.twitter ? `https://twitter.com/${author.twitter.replace(/^@/, "")}` : null
-    const facebookUrl = author.facebook ? `https://www.facebook.com/${author.facebook.replace(/^\//, "")}` : null
+    const author = data.ghostAuthor;
+    const posts = data.allGhostPost.edges;
+    const twitterUrl = author.twitter ? `https://twitter.com/${author.twitter.replace(/^@/, "")}` : null;
+    const facebookUrl = author.facebook ? `https://www.facebook.com/${author.facebook.replace(/^\//, "")}` : null;
 
     return (
         <>
@@ -50,8 +50,8 @@ const Author = ({ data, location, pageContext }) => {
                 </div>
             </Layout>
         </>
-    )
-}
+    );
+};
 
 Author.propTypes = {
     data: PropTypes.shape({
@@ -71,9 +71,9 @@ Author.propTypes = {
         pathname: PropTypes.string.isRequired,
     }).isRequired,
     pageContext: PropTypes.object,
-}
+};
 
-export default Author
+export default Author;
 
 export const pageQuery = graphql`
     query GhostAuthorQuery($slug: String!, $limit: Int!, $skip: Int!) {
@@ -93,4 +93,4 @@ export const pageQuery = graphql`
             }
         }
     }
-`
+`;
