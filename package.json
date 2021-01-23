@@ -3,6 +3,7 @@
   "description": "A starter template to build lightning fast websites with Ghost and Gatsby",
   "version": "1.0.0",
   "author": "Nat Burgwyn",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/burgwyn/natburgwyn-com.git"
@@ -24,9 +25,6 @@
     "dev": "gatsby develop",
     "lint": "eslint . --ext .js --cache",
     "test": "jest"
-  },
-  "resolutions": {
-    "node-forge": "^0.10.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",
