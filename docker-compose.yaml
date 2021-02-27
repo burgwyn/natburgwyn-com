@@ -9,23 +9,26 @@ services:
       # see https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables
       database__client: mysql
       database__connection__host: db
-      database__connection__user: root
+      database__connection__user: ghost
       database__connection__password: password
       database__connection__database: ghost
       # this url value is just an example, and is likely wrong for your environment!
       url: http://localhost:8080
     links:
       - db
+    restart: on-failure
 
   db:
-    image: mysql:5.7.26
-    volumes:
-      - db-data:/var/lib/mysql/data
+    image: mysql:5
     ports:
       - 3306
+    volumes:
+      - db_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
-
+      MYSQL_DATABASE: ghost
+      MYSQL_USER: ghost
+      MYSQL_PASSWORD: password
 
 volumes:
-  db-data:
+  db_data: {}
