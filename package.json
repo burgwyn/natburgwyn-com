@@ -38,7 +38,7 @@
     "eslint-plugin-react": "7.22.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
-    "react-test-renderer": "^16.14.0"
+    "react-test-renderer": "^17.0.1"
   },
   "dependencies": {
     "@tryghost/helpers": "1.1.39",
@@ -59,8 +59,8 @@
     "gatsby-source-ghost": "4.2.3",
     "gatsby-transformer-sharp": "3.0.0",
     "lodash": "4.17.21",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-helmet": "6.1.0"
   }
 }
