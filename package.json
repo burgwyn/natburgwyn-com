@@ -41,10 +41,10 @@
     "react-test-renderer": "^16.14.0"
   },
   "dependencies": {
-    "@tryghost/helpers": "1.1.38",
-    "@tryghost/helpers-gatsby": "1.0.43",
+    "@tryghost/helpers": "1.1.39",
+    "@tryghost/helpers-gatsby": "1.0.44",
     "cheerio": "1.0.0-rc.5",
-    "gatsby": "3.0.0",
+    "gatsby": "3.0.2",
     "gatsby-awesome-pagination": "0.3.6",
     "gatsby-image": "3.0.0",
     "gatsby-plugin-advanced-sitemap": "1.6.0",
