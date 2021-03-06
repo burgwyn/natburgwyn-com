@@ -9,6 +9,7 @@ import config from "../../utils/siteConfig";
 
 // Styles
 import "../../styles/app.css";
+import SkipNav from "../SkipNav";
 
 /**
 * Main layout component
@@ -30,7 +31,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <body className={bodyClass} />
             </Helmet>
-
+            <SkipNav />
             <div className="viewport">
 
                 <div className="viewport-top">
@@ -70,7 +71,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         </div>
                     </header>
 
-                    <main className="site-main">
+                    <main className="site-main" id="site-main">
                         {/* All the main content gets inserted here, index.js, post.js */}
                         {children}
                     </main>
