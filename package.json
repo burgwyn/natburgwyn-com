@@ -1,6 +1,6 @@
 {
   "name": "natburgwyn-com",
-  "description": "A starter template to build lightning fast websites with Ghost and Gatsby",
+  "description": "Personal website with Ghost and Gatsby",
   "version": "1.0.0",
   "author": "Nat Burgwyn",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "url": "git+https://github.com/burgwyn/natburgwyn-com.git"
   },
   "engines": {
-    "node": ">= 10.13.0"
+    "node": ">= 12.20.0"
   },
   "bugs": {
     "url": "https://github.com/burgwyn/natburgwyn-com/issues"
