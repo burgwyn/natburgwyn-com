@@ -3727,7 +3727,7 @@ babel-preset-current-node-syntax@^1.0.0:
     "@babel/plugin-syntax-optional-chaining" "^7.8.3"
     "@babel/plugin-syntax-top-level-await" "^7.8.3"
 
-babel-preset-gatsby@^1.6.0:
+babel-preset-gatsby@^1.14.0, babel-preset-gatsby@^1.6.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-1.14.0.tgz#a2b7ac56c3e2a81909a93b094ec8cccbbdc8b194"
   integrity sha512-weu2mSxvlzWUUaSfO67AS005W2+UncMgyTwkGWMoqeNe4MaZxWMtEimxBRVDPHvhW/VQIzeh3aL+gjZ2v9P4oQ==
