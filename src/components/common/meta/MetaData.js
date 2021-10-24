@@ -56,9 +56,9 @@ const MetaData = ({
             />
         );
     } else {
-        title = title || config.siteTitleMeta || settings.title; // eslint-disable react/prop-types
-        description = description || config.siteDescriptionMeta || settings.description; // eslint-disable react/prop-types
-        image = image || settings.cover_image || null; // eslint-disable react/prop-types
+        title = title || config.siteTitleMeta || settings.title; // eslint-disable-line react/prop-types
+        description = description || config.siteDescriptionMeta || settings.description; // eslint-disable-line react/prop-types
+        image = image || settings.cover_image || null; // eslint-disable-line react/prop-types
 
         image = image ? url.resolve(config.siteUrl, image) : null;
 
