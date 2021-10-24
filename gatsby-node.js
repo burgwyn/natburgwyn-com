@@ -49,6 +49,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Check for any errors
     if (result.errors) {
+        // eslint-disable-next-line no-restricted-syntax
         throw new Error(result.errors);
     }
 
