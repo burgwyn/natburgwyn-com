@@ -56,9 +56,9 @@ const MetaData = ({
             />
         );
     } else {
-        title = title || config.siteTitleMeta || settings.title;
-        description = description || config.siteDescriptionMeta || settings.description;
-        image = image || settings.cover_image || null;
+        title = title || config.siteTitleMeta || settings.title; // eslint-disable-line react/prop-types
+        description = description || config.siteDescriptionMeta || settings.description; // eslint-disable-line react/prop-types
+        image = image || settings.cover_image || null; // eslint-disable-line react/prop-types
 
         image = image ? url.resolve(config.siteUrl, image) : null;
 
