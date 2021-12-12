@@ -2,7 +2,7 @@ version: "3.8"
 services:
 
   ghost:
-    image: ghost:alpine
+    image: ghost:3-alpine
     ports:
        - 8080:2368
     environment:
