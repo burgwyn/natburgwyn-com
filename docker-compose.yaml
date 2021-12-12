@@ -2,7 +2,7 @@ version: "3.8"
 services:
 
   ghost:
-    image: ghost:alpine
+    image: ghost:4-alpine
     ports:
        - 8080:2368
     environment:
@@ -21,7 +21,7 @@ services:
   db:
     image: mysql:5
     ports:
-      - 3306
+      - 3306:3306
     volumes:
       - db_data:/var/lib/mysql
     environment:
