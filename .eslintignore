@@ -2,3 +2,6 @@ public/**
 plugins/**/*.js
 plugins/*/node_modules/*
 !plugins/*/src/*.js
+gatsby-*.js
+__mocks__/*
+node_modules/*
