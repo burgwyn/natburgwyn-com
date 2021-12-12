@@ -76,3 +76,6 @@ yarn-error.log
 
 # Local Netlify folder
 .netlify
+
+# Local Ghost config
+.ghost.json
